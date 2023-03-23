@@ -3,6 +3,17 @@
 \usepackage{blindtext}
 \usepackage{graphicx}
 \usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={My Resume}
+}
+
 
 %\setmainfont{Arial}
 \graphicspath{ {./res/} }
@@ -11,120 +22,51 @@
 
 \include{./src/titlepage}
 
+\section{Área}
+Sistemas de informacion
+
 \section{Asesores}
 \begin{itemize}
-    \item{Doctora Mariuxi Bruzza Moncayo}
+    \item{Doctora Mariuxi Alexandra Bruzza Moncayo}
     \item{Doctor Manuel Francisco Tupia Anticona}
 \end{itemize}
 
 \section{Plan de trabajo}
 
-Completar avances/observaciones los lunes, miercoles y jueves de 8pm a 10pm, y
-los sabados y domingos de 6pm a 10pm. Entrega de avance los lunes,
-miercoles y jueves a las 10 pm.
+Completar avances y levanto de observaciones los lunes, miercoles y jueves de
+8pm a 10pm, y los sabados y domingos de 6pm a 10pm.
+Se entregaran avances los lunes, miercoles y jueves a las 10 pm.
 
 \subsection{Cronograma de reuniones}
 
 Reuniones semanales los miercoles de 4pm a 5pm.
 
-\section{Área}
-
-Sistemas de informacion
-
 \section{Descripción}
 
 El proyecto consiste en desarrollar un sistema web que permita gestionar
 información turística a nivel de un país, tomando como referencia la web:
-https://www.visitportugal.com/es.
-El sistema va a contar con funcionalidades tales como:
-
+\url{https://www.visitportugal.com/es}. Es verdad que la mayoria de instituciones
+gubernamentales en el mundo y empresas turisticas locales ya poseen informacion
+para turistas, pero esta informacion tiende a ser poco interactiva o no existente
+en los casos en que la empresa turistica no posee convenios con empresas locales
+en las ubicaciones que un turista este interesado.\\
+Esta tesis propone una solucion de software la cual remediara los problemas
+anteriormente mencionados, ademas de incluir funcionalidades adicionales tales como:
 \begin{itemize}
-    \item{Información básica para el ingreso al país.}
-    \item{Mapas y folletos}
-    \item{Enlaces de interés}
-    \item{Regiones del país}
-    \item{Historia y noticias (incluye regulación vigente de carácter general
-        que puede impactar en la visita del turista)
-
-        agentes internaciones, canales de youtube, canales de television
-
-        historia sacar del ministerio de turismo
-        }
-    \item{
-            ¿Qué hacer en el país?
-
-            que proponerle al turista (paquetes de actividades)
-        }
-    \item{
-            Buscardor de actividades, eventos, alojamiento, transporte.
-
-            No es algoritmo muy complicado?
-
-            elaborar paquetes de actividades (tablas para cada ciudad)
-            a partir de condiciones iniciales (destino y tipo de actividad)
-
-            formas de transporte, seguridad del transporte
-
-            quieres aparecer en las busquedas de los paquetes? que cada empresa
-            pague para inscribirse
-
-            mostrarle todas las alternativas al turista
-
-            solicitar rutas, costos y horarios a las empresas de transporte
-
-            solicitar costos promedio por comida/carta
-        }
-    \item{
-            Imágenes y videos
-
-            relacionado a historia
-        }
+    \item{Mostrar información básica para el ingreso al país.}
+    \item{Mostrar enlaces de interés}
+    \item{Mostrar historia del lugar y noticias actuales.}
+    \item{Buscardor de actividades, eventos, alojamiento, transporte.}
     \item{Planificación de viajes}
+    \item{Entre otros\ldots{}}
 \end{itemize}
-Se plantea que el sistema funcione en pantallas tactíles y en equipos `all-in-one'
-
-requerimiento es que sea para ecuador
-
-tactil para instituciones publicas
-
-personas que buscan mucho en los information center, terminales de buses, museos
-paraderos oficiales de taxis.
-
-\subsection{¿Qué problema busca resolver?}
-
-administrados por el gobierno
-
-ingreso de datos puede ser un sistema comun y corriente.
-
-para el cliente puede ser una app o una pagina web.
-
-generar propio teclado vs teclado del sistema operativo
-
-Generacion de paquetes con informacion unificada. Evitar el uso de multiples
-paginas para obtener informacion.
-
-Como guardar la informacion para uso futuro. (correo, whatsapp, impresion)
-
-Las agencias turisticas cobran. Si no tienen proveedores en ciertos lugares no
-es posible que estos provean informacion, hostales, restaurantes, turismo.
-
-\subsection{¿Qué resultado espera lograr?}
-
-un gestor de contenido que maneje informacion turistica, gastronomica, comercial
-(restaurantes, centros turisticos, parques de diversiones).
-
-atracciones locales controladas por instituciones publicas.
-
-\subsection{¿Qué métodos y procedimientos espera usar?}
-
-sacar informacion de migraciones de cada departamento/canton. Con conexion a maps.
-
-o mapas elaborados por instituciones publicas.
-
-enlaces de interes.
-
-\subsection{Alcance}
-
-
+Gran parte de la informacion requerida se obtendra utilizando fuentes públicas
+de cada gobierno local. Esta informacion será ingresada utilizando un sistema
+simple de administracion de contenido incluido en el sistema. Esta informacion
+se mostrara a los usuarios utilizando una aplicacion web la cual tendra funcionalidades
+adicionales las cuales le permitan trabajar en dispositivos tactiles y `All-in-one'.
+Adicionalmente, se implementara un algoritmo propietario el cual se encargara
+de la generacion de paquetes de viajes (lista de actividades, informacion de transporte,
+informacion adicional, etc).
 
 \end{document}

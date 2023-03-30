@@ -1,4 +1,11 @@
 % vi:ft=tex
+
+\DTMnewdatestyle{dashdate}{%
+    \renewcommand{\DTMdisplaydate}[4]{%
+        \DTMtwodigits{##3}-\DTMtwodigits{##2}-\number##1 }%
+    \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+
 \begin{titlepage}
     \begin{center}
         \vspace*{1cm}
@@ -34,7 +41,7 @@
 
         \normalsize
         \vspace{2.5cm}
-        {Lima, Marzo de 2023}
+        Lima, Marzo de 2023
     \end{center}
 \end{titlepage}
 

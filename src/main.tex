@@ -1,11 +1,14 @@
-\documentclass{article}
+% LTeX: language=es
+
+\documentclass{report}
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{xltabular}
 \usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage[es-ES]{datetime2}
 
 \hypersetup{
     colorlinks=true,
@@ -19,82 +22,67 @@
 
 \begin{document}
 
-\include{./src/titlepage}
+\include{titlepage}
 
-\section{Título}
-Desarrollo de un sistema web para la gestión de contenidos de información turística.
-Caso de estudio: VisitaEcuador.ec
+\begin{abstract}
 
-\section{Asesores}
+\end{abstract}
+
+\tableofcontents
+
+\cleardoublepage{}
+\phantomsection{}
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+\cleardoublepage{}
+\phantomsection{}
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+
+\chapter{Generalidades}
+\section{Problemática}
+\subsection{Árbol de Problemas}
+\section{Objetivos}
+\section{Métodos y Procedimientos}
+
+\chapter{Marco Legal/Regulatorio/Conceptual/otros}
+\section{Introducción}
+\section{Desarrollo del marco}
+
+
+\chapter{Estado del Arte}
+
+En este capitulo se presenta la revision sistematica del Estado del Arte en
+relacion a la 
+
+\section{Introducción}
+\section{Objetivos de revisión}
+\section{Preguntas de revisión}
+
+Se plantean las siguientes preguntas con el fin de lograr el objetivo de la
+revision.
+
+\section{Estrategia de búsqueda}
+
 \begin{itemize}
-    \item{Doctora Mariuxi Alexandra Bruzza Moncayo}
-    \item{Doctor Manuel Francisco Tupia Anticona}
+    \item{Definicion de terminos de busqueda}
+    \item{Seleccion de fuentes a consultar}
+    \item{Elaboracion de la cadena de busqueda}
+    \item{Definicion de criterios de inclusion y exclusion}
 \end{itemize}
 
-\section{Plan de trabajo}
+\subsection{Motores de búsqueda a usar}
 
-Se llego a un acuerdo entre el tesista y los asesores. En este acuerdo se decidió
-que se tendrían reuniones uno a uno de una hora los miércoles utilizando la
-plataforma zoom, siendo esta reunión grabada para futura referencia.
-Adicionalmente, toda comunicación adicional debe ser mediante el uso de correo electrónico.
-
-Todo documento que se desee que los asesores lo revisen, tendrá que ser subido
-a la plataforma de Google Drive configurado previo al inicio del curso. Finalmente,
-el url del archivo subido sera adjuntado al correo electrónico que se enviará a
-los asesores.
-
-\input{./src/cronograma-reuniones}
-
-\newpage
-
-\section{Área}
-Sistemas de información
-
-\section{Descripción}
-
-El proyecto consiste en desarrollar un sistema web para la gestión turística de
-la zona 4 de Ecuador, tomando como referencia la web:
-\url{https://www.visitportugal.com/es}.\\
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{visit-portugal-site.png}
-Es verdad que la mayoría de instituciones gubernamentales en el mundo y empresas
-turísticas locales ya poseen información para turistas, pero esta información
-tiende a ser poco interactiva, no existente en los casos en que la empresa turística
-no posee convenios con empresas locales en las ubicaciones que un turista este interesado,
-se encuentra desactualizada o no cumple con las expectativas del turista para
-la búsqueda de información.\\
-Esta tesis propone una solución de software la cual remediara los problemas
-anteriormente mencionados, además de incluir funcionalidades adicionales tales como,
-pero sin limitarse a:
 \begin{itemize}
-    \item{Mostrar información básica para el ingreso al país.}
-    \item{Mostrar mapas y folletos del lugar.}
-    \item{Mostrar posibles actividades para cada tipo de usuario.}
-    \item{Mostrar enlaces de interés.}
-    \item{Mostrar historia del lugar y noticias actuales.}
-    \item{Buscador de actividades, eventos, alojamiento, transporte.}
-    \item{Mostrar imágenes y videos de posible interés al usuario.}
-    \item{Planificación de viajes (generación de paquetes personalizados).}
+    \item{Scopus}
+    \item{IEEE Xplore}
+    \item{Springer}
 \end{itemize}
-Gran parte de la información requerida se obtendrá utilizando fuentes públicas
-de cada gobierno local. Esta información será ingresada utilizando un sistema
-simple de administración de contenido incluido en el sistema. Esta información
-se mostrara a los usuarios utilizando una aplicación web la cual tendrá funcionalidades
-adicionales las cuales le permitan trabajar en dispositivos táctiles y `All-in-one'.
-Adicionalmente, se implementara un algoritmo propietario el cual se encargara
-de la generación de paquetes de viajes. La generación de estos paquetes turísticos
-evitaría que los turistas tengan que utilizar múltiples paginas web para planear
-su viajes ya que esta solución de software tendría toda la información centralizada.\\
-La generación de los paquetes depende de condiciones iniciales. Estas condiciones
-iniciales incluirían el lugar inicial del viaje, lugar destino y además de un
-itinerario de actividades que los turistas deseen realizar. Luego que el usuario
-ha definido estas condiciones iniciales, se utilizara el algoritmo mencionado
-anteriormente para generar información la cual incluiría instrucciones para llegar
-al lugar de destino, las empresas que realizan esos viajes, los horarios que
-tienen disponibles y los costos promedios del viaje. Si es que los turistas desean
-comer algo, se mostrara información de los restaurantes cercanos al lugar junto con
-el costo promedio de las comidas que ofrecen. Finalmente, de acuerdo al itinerario
-de actividades que el turista ha elegido, se mostrara información acerca de los
-negocios que proveen tales experiencias junto con información adicional para que
-el turista se comunique con estos.
+
+\subsection{Cadenas de búsqueda a usar}
+\subsection{Criterios de inclusión/exclusión}
+\section{Formulario de extracción de datos}
 
 \end{document}

@@ -6,6 +6,7 @@
 \usepackage{booktabs}
 \usepackage{xltabular}
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage[es-ES]{datetime2}
@@ -72,30 +73,38 @@ usuario final.
 Para lograr los objetivos previamente descritos, se planean las siguientes preguntas
 de investigación:
 
-\begin{itemize}
-    \item{De que manera las instituciones publicas gestionan la informacion
-        turistica?}
-    \item{Cuales son los factores a tomar en cuenta para gestionar informarcion
-        de interes para los turistas?}
-    \item{}
-\end{itemize}
-- Casos de implementacion de sistemas informaticos para la gestion turistica
+\begin{enumerate}
+    \item{De qué manera las instituciones públicas gestionan la información
+        turística?}
+    \item{Cuáles son los factores a tomar en cuenta para gestionar información
+        de interés para los turistas?}
+    \item{De qué manera se han implementado sistemas de información turísticos
+        comerciales?}
+\end{enumerate}
 
 \section{Estrategia de búsqueda}
 
 \subsection{Motores de búsqueda a usar}
 
-En el presente trabajo se utilizaran los siguientes motores de busqueda.
+En el presente trabajo se utilizarán los siguientes motores de búsqueda.
 
 \begin{itemize}
     \item{Scopus}
-    \item{IEEE Xplore}
     \item{Springer}
 \end{itemize}
 
 \subsection{Cadenas de búsqueda a usar}
 
-TODO
+\subsubsection{Scopus}
+
+\subsubsection{Springer}
+
+\subsection{Cantidad de documentos encontrados}
+
+\begin{itemize}
+    \item{Springer: X}
+    \item{Scopus: X}
+\end{itemize}
 
 \subsection{Definición de criterios de inclusión y exclusión}
 
@@ -124,19 +133,23 @@ TODO
 \newcolumntype{C}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
 
 \begin{xltabular}{\textwidth}{C{0.5} L{2} C{0.5}}
-    \caption{Formulario de extraccion de datos.}\label{table:extracion_datos} \\
+    \caption{Formulario de extracción de datos.}\label{table:extracion_datos} \\
     \toprule
-    Campo & Descripcion & Tipo de pregunta \\
+    Campo & Descripción & Tipo de pregunta \\
     \midrule
     ID & Identificador o DOI del documento & General \\
     \midrule
-    Titulo & Titulo del documento & General \\
+    Título & El título del documento & General \\
     \midrule
-    Autores & Autores del documento & General \\
+    Autores & Los autores del documento & General \\
     \midrule
-    Tipo de fuente
+    Año de publicación & El año en el que el documento fue publicado. & General \\
     \midrule
-    Año de publicacion
+    Método de organización de información & Como se describe en el documento la organización de la información turística en el sistema de información. & P1 \\
+    \midrule
+    Factores y riesgos & Los factores y riesgos que el documento toma en cuenta respecto a la administración de información turística. & P2 \\
+    \midrule
+    Soluciones Tecnológicas & Estado del arte de las tecnologías usadas en el sistema descrito por el documento. & P3 \\
     \bottomrule
 \end{xltabular}
 

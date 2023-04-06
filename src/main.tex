@@ -3,20 +3,23 @@
 \documentclass{report}
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{xltabular}
 \usepackage[spanish]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
-\usepackage[es-ES]{datetime2}
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{xltabular}
 
 \hypersetup{
-    colorlinks=true,
+    colorlinks=false,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
     pdftitle={Tesis de Carlos Santos Toro Vera}
 }
+
+\addbibresource{./src/main.bib}
 
 \graphicspath{ {./res/} }
 
@@ -30,14 +33,8 @@
 
 \tableofcontents
 
-\cleardoublepage{}
-\phantomsection{}
-\addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
 
-\cleardoublepage{}
-\phantomsection{}
-\addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
 
 \include{ch1}
